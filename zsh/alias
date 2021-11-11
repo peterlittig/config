@@ -1,0 +1,35 @@
+# zsh aliases
+
+# refresh aws credentials
+alias acr="source $HOME/.aws_credentials"
+
+alias cd1='cd ..'
+alias cd2='cd ../..'
+alias cd3='cd ../../..'
+alias cd4='cd ../../../..'
+alias cd5='cd ../../../../..'
+alias cd6='cd ../../../../../..'
+alias cd7='cd ../../../../../../..'
+alias cd8='cd ../../../../../../../..'
+alias cd9='cd ../../../../../../../../..'
+
+alias config="cd $HOME/Development/renaissance/git/plittig/config"
+
+alias f='find . -name'
+
+alias gs='git status'
+
+alias hg="history 1 | grep "
+alias hl="history 1 | less"
+
+alias j='jobs'
+
+alias m='less'
+
+
+# I pulled this command from brew's post-intall notes.
+alias pgstart='/usr/local/opt/postgresql@11/bin/postgres -D /usr/local/var/postgresql@11'
+
+alias rm='rm -i'
+
+alias s="source $HOME/.zshrc"

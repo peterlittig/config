@@ -1,0 +1,26 @@
+# zsh resource file
+
+PROMPT='
+%D{%a %b %d %l:%M %p}
+
+%~
+%h%# '
+
+# History command overrides
+HISTSIZE=99999
+HISTFILESIZE=999999
+SAVEHIST=$HISTSIZE
+
+# brew-recommended env variable
+LIQUIBASE_HOME='/usr/local/opt/liquibase/libexec'
+
+# Prepend current directory to path.
+path[1,0]=.
+
+source $HOME/.alias
+
+# Added for pyenv
+# See: https://opensource.com/article/19/5/python-3-default-mac
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

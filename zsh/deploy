@@ -1,0 +1,2 @@
+cp zshrc $HOME/.zshrc
+cp alias $HOME/.alias
